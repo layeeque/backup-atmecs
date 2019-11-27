@@ -1,0 +1,50 @@
+<!doctype>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        //         var refreshId = setInterval(setInterval(function()
+        // {
+        //     i=i+50;
+        //   $("#outerdiv").scrollTop(50+i);
+        //   return false;
+        // }), 500)
+        var i = 0;
+        function callme() {
+            setInterval(function () {
+                i = i + 200;
+                //$("#inneriframe").scroll(0,20);
+                //a.scrollTop(100);
+                console.log("I am in callme function");
+                return false;
+            }, 1000);
+        }
+        window.onload = callme;
+    </script>
+    <style>
+        #outerdiv {
+            width: 446px;
+            height: 246px;
+            overflow-y: hidden, scroll;
+            position: relative;
+        }
+
+        #inneriframe {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='outerdiv'>
+        <iframe src="http://www.atmecs.com" id='inneriframe' scrolling="yes"></iframe>
+    </div>
+</body>

@@ -1,0 +1,17 @@
+{
+  "name": "automationdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Rehman",
+  "license": "ISC",
+  "dependencies": {
+    "imap": "^0.8.19",
+    "mail-notifier": "^0.5.0",
+    "nightwatch": "^0.9.21",
+    "node-cmd": "^3.0.0"
+  }
+}

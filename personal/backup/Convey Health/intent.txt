@@ -1,0 +1,64 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.ResumeIntent"
+    },
+    {
+      "intent": "reportasked"
+    },
+    {
+      "slots": [
+        {
+          "name": "docname",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "doctor"
+    },
+    {
+      "intent": "address"
+    },
+    {
+      "intent": "greeting"
+    },
+    {
+      "slots": [
+        {
+          "name": "xyz",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "OTPverification"
+    },
+    {
+      "slots": [
+        {
+          "name": "pid",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "patientVerify"
+    },
+    {
+      "slots": [
+        {
+          "name": "reportid",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "patientReportVerify"
+    },
+    {
+      "slots": [
+        {
+          "name": "doctorchoiceent",
+          "type": "DOCCHOICE"
+        }
+      ],
+      "intent": "doctorChoiceEntry"
+    }
+  ]
+}

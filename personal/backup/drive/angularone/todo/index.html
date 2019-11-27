@@ -1,0 +1,31 @@
+<html ng-app="todoApp">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="angular.js"></script>
+</head>
+
+<body>
+    <h1>Todo App</h1>
+    <div ng-controller="TodoCtrl">
+        <p>Add a todo</p>
+        <input type="text" ng-model="newtodo"/><br/><br/>
+        <input type="button" value="Add" ng-click="addNewTodo()"/><br/><br/>
+       <!-- <button ng-click="triggereditmode()">Edit<button> -->
+           <input ng-show="editflag" type="button" value="Edit" ng-click="triggereditmode()"/>
+           <input ng-hide="editflag" type="button" value="Save" ng-click="triggereditmode()"/><br/>
+        <ol>
+            <div>
+            <li ng-repeat="todo in todos track by $index">
+                <span ng-show="editflag">{{todo}}</span> 
+                <input ng-hide="editflag" type="text" ng-model="todo"/>
+                <input ng-show="editflag"  type="button" value="delete" ng-click="deletetodo($index)">
+                  </li>
+           
+            </div>
+       </ol>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+poolId: 'us-east-1:354b107f-e399-485a-9d47-1fa54915c980'
+ botName: 'WebUiOrderFlowers'

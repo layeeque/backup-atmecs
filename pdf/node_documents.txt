@@ -1,0 +1,2 @@
+node.js is written in c++
+V8 engine converts javascript into machine code 

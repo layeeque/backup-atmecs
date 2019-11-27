@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script>
+        var flag = true;
+        function fun() {
+
+            if (flag == true) {
+                console.log("In true block")
+                document.getElementById("container").style.display = "block";
+                document.getElementById("data").style.opacity=0.3;
+                
+
+                flag = false
+            }
+            else {
+                console.log("In false block")
+                document.getElementById("container").style.display = "none";
+                flag = true;
+                document.getElementById("data").style.opacity=1;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+ <div id="data">
+        <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+ </div>
+    <div id="container" style="display:none;position :fixed; bottom:50px;right:60px">
+        <iframe width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/f4fc88e8-429a-4aa7-9ca2-fa064e10611d">
+        </iframe>
+    </div>
+    <button onclick="fun()" style="position :fixed; bottom:30px;right:40px"> click me</button>
+
+</body>
+
+</html>

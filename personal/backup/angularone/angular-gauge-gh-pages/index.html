@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>svg test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-app="demo">
+    
+
+    <gauge data="data" data-mode="{{mode}}" data-max="{{max}}" data-show-percent="showPercent" data-show-sub-percent="true" data-on-hover="hover($event, $path)"></gauge>
+
+    <button ng-click="randomizedata()">rnd</button>
+
+    <script src="https://code.angularjs.org/1.5.0/angular.js"></script>
+    <script src="angular-gauge.js"></script>
+    <script src="demo.js"></script>
+
+</body>
+
+</html>

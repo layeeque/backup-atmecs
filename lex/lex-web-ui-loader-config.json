@@ -1,0 +1,27 @@
+{
+    "cognito": {
+      "poolId": "us-east-1:86c608f4-0702-4c6c-a90b-ec97948921bc"
+    },
+    "lex": {
+      "botName": "OrderFlowers",
+      "initialText": "",
+      "initialSpeechInstruction": ""
+    },
+    "ui": {
+      "parentOrigin": "",
+      "toolbarTitle": "Order Flowers",
+      "toolbarLogo": "",
+      "pushInitialTextOnRestart": false
+    },
+    "polly": {
+      "voiceId": "Salli"
+    },
+    "recorder": {
+      "preset": "speech_recognition"
+    },
+    "iframe": {
+      "iframeOrigin": "",
+      "iframeSrcPath": "/index.html#/?lexWebUiEmbed=true",
+      "shouldLoadIframeMinimized": true
+    }
+  }

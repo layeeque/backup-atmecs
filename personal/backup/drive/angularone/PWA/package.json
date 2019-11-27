@@ -1,0 +1,19 @@
+{
+  "name": "bookapp",
+  "version": "1.0.0",
+  "description": "Simple app which displays various books along with their authors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mujtaba",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-protractor": "^4.1.0",
+    "mongoose": "^4.11.11"
+  }
+}

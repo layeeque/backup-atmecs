@@ -1,0 +1,12 @@
+md-card{
+    margin: 50 80px 85px 90px;
+}
+
+.app-content{
+    width:100%;
+}
+
+.md-raised md-warn{
+    color: green;
+    background-color: green;
+}

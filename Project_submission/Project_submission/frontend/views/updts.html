@@ -1,0 +1,49 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="font-size: 30px;font-weight: bold;color:grey" href="#">Blockchain Todo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="#!login">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#!test">Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Abort</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#!admin">Admin page</a>
+                  </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="#!gets">Get the Status</a>
+              </li>
+      
+      
+          </ul>
+      
+        </div>
+      </nav>
+    
+    
+    
+    <div class="card" style="width:50%">
+        <h3 style="color:grey">Update the Status of the task assigned to the of the Account Holder</h3><br><br>
+        Account No : <input type="text" ng-model="acc" placeholder="Enter the Account Number"><br>
+        <button ng-click="check()" class="Rbutton"style="width:20%;margin:auto"><span class="save">submit</span></button><br>
+        <div ng-if="msg">{{msg}}</div><br><br>
+
+        
+       <div ng-if="taskid"> Status : {{result}}<br><br> Task ID : {{taskid}}<br><br></div>
+        New Update Status : <input type="text" ng-model="newStatus" placeholder="Enter the new status"><br>
+        <button ng-click="update()" class="Rbutton"style="width:20%;margin:auto"><span class="save">Update</span></button><br>
+        <div ng-if="txhash">Transaction hash : {{txhash}}</div>
+    </div>

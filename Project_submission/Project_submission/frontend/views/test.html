@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" style="font-size: 30px;font-weight: bold;color:grey" href="#">Blockchain Todo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active">
+        <a class="nav-link" href="#!login">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#!test">Test</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Abort</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!myTask">View My Tasks</a>
+      </li> 
+    </ul>
+
+  </div>
+</nav>
+<!-- <a href="#!myTask" class="pull-right"><button class="Rbutton "><span class="save">View My Tasks</span></button></a> -->
+<div class="container-fluid">
+  <h2 style="text-align: center;padding:1%;color:grey">All the tasks Available<br>{{msg}}</h2>
+  <form ng-submit="submitAns()">
+
+    <table class="table table-striped">
+      <tr>
+        <th>All Tasks</th>
+        <th>Apply</th>
+        <th>Status</th>
+        <th>Submit</th>
+      </tr>
+      <tr ng-repeat="q in questions">
+
+        <td style="width:85%">{{q.question}}</td>
+
+        <td style="font-weight: bolder;font-size:larger">
+          <input type="checkbox" style="height:25px;width:40%" name="checkbox" id="$index" value="apply" ng-model="apply" ng-click="applyFunction($index)" ng-checked="apply.Taskid == $index+100" ng-disabled="checktype && checktype != $index"/> &nbsp;&nbsp;&nbsp;</td>
+         <td style="font-weight: bolder;font-size:larger">  
+           <input type="checkbox"  style="height:25px;width:40%" value="confirm" ng-model="confirm" ng-checked=" apply.status == 'Alloted' && apply.BLadd =='yes' && apply.Taskid == $index+100" disabled/> &nbsp;&nbsp;&nbsp;</td>
+         <td style="font-weight: bolder;font-size:larger">
+          <input type="checkbox"  style="height:25px;width:40%" value="status" ng-model="status" ng-click="sumbitTask($index)" ng-disabled="(!(apply.status == 'Alloted' && apply.BLadd =='yes' && apply.Taskid == $index+100)||submisssion)"/>&nbsp;&nbsp;&nbsp;</td>
+         <td>          
+
+      </tr>
+
+    </table>
+
+    <div class="row" style="padding-top:1% ;padding-bottom: 3%">
+      <div class="col-md-5"></div>
+      <div class="col-sm-1  col-md-1 " >
+     <a href="#!login">   <button type="submit" class="Rbutton">
+        <span class="save">Return to  Login</span>
+      </button></a>
+      </div>
+      <div class="col-md-5"></div>
+    </div>
+
+  </form>
+</div>

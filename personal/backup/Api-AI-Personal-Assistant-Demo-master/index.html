@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Convey Health</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="fetch.js"></script>
+  <script src="es6-promise.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style type="text/css">
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input id="speech" type="text"><br/>
+    <button id="rec" class="btn">Speak</button><br/><br/>
+     <button id="sum" class="btn" onclick="getTextSummary()">Get_Summary</button>
+    <div id="spokenResponse" class="spoken-response">
+      <div class="spoken-response__text"></div>
+    </div>
+    <br/>
+  <div id="summary" style="font-size: 13px">|</div>
+  </div>
+  
+  <!-- <div class="debug">
+    <div class="debug__btn btn">
+      Debug JSON results
+    </div>
+    <div class="debug__content">
+      <textarea id="response" cols="40" rows="20"></textarea>
+    </div>
+  </div> -->
+  
+   
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet" type="text/css">
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "angular-gauge",
+  "version": "1.0.0",
+  "authors": [
+    "abau <alexander.bau@emtec.de>"
+  ],
+  "description": "",
+  "main": "angular-gauge.js",
+  "moduleType": [],
+  "license": "NONE",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo.js",
+    "index.html"
+  ]
+}

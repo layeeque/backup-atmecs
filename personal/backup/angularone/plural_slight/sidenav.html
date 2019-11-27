@@ -1,0 +1,9 @@
+<md-content>
+    <md-list>
+        <md-list-item ng-repeat="user in users | orderBy:'name'">
+            <md-button ng-click="selectUser(user)" ng-class={ 'selected':user===s elected}>
+            {{user.name}}
+            </md-button>
+        </md-list-item>
+    </md-list>
+</md-content>

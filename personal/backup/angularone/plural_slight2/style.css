@@ -1,0 +1,18 @@
+h4{
+    /* color: red; */
+    background-color: none;
+}
+.md-raised {
+    /* color:green; */
+     background-color: none;
+}
+
+.flex-gt-xs-50, .layout-row>.flex-gt-xs-50 {
+ max-height: none;
+ min-height: 100px;
+}
+
+.md-fab 
+{
+    bottom:15px;
+}

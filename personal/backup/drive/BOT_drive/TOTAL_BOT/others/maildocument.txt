@@ -1,0 +1,35 @@
+console.log('Loading function');
+
+var https = require('https');
+var querystring = require("querystring");
+
+var iftttMakerEventName = 'demofunction'
+var iftttMakerSecretKey = 'foLJKKOueM9syNd9DK_xj3cN7D0wJCg7SMBM0REkh6t';  //paste your key here
+
+var iftttMakerUrl =
+    'https://maker.ifttt.com/trigger/' +
+    iftttMakerEventName +
+    '/with/key/' +
+    iftttMakerSecretKey;
+
+
+
+
+
+
+
+    https.get(encodeURI(iftttMakerUrl) + '?' + params, function(res) {
+        console.log('Got response: ' + res.statusCode);
+        res.setEncoding('utf8');
+        res.on('data', function(d) {
+            console.log('Body: ' + d);
+        });
+       //callback(null, res.statusCode);
+      //session.attributes={};
+       // callback(session.attributes,
+       // buildSpeechletResponseWithoutCard("Good bye! Thank you for using Reindeer Facts!", "", true));
+       callback(output);
+    }).on('error', function(e) {
+        console.log("Got error: " + e.message);
+        callback(e.message);
+    });

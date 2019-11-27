@@ -1,0 +1,44 @@
+Chatbot
+
+A chatbot is a service, powered by rules that are based on Artificial Intelligence(AI) and Machine Learning algorithms, that you interact with a chat interface. It could be a fun service or a real world service like Facebook Messenger, Slack etc to provide users more engaging experience.
+
+
+
+Amazon Lex is an AWS service for building conversational interfaces for any applications using voice and text. With Amazon Lex, the same onversational engine that powers Amazon Alexa is now available to any developer, enabling you to build sophisticated, natural language chatbots into your new and existing applications. Amazon Lex provides the deep functionality and flexibility of natural language understanding (NLU) and automatic speech recognition (ASR) so you can build highly engaging user experiences with lifelike, conversational interactions, and create new categories of products.
+
+Problem Statement
+
+Build a solution/idea to create conversational, intelligent and interactive chatbots as a microservice using Amazon Lex and AWS Lambda.
+
+Themes (Pick At Least One)
+
+The idea submission can be for atleast one of the themes below:
+
+1. Financial Services: Develop secure and innovative solutions to increase customer and shareholder value.
+
+2. Digital Marketing: Drive your digital marketing business with flexible, highly scalable, elastic and low cost solutions to build on.
+
+3. Healthcare and Life Sciences: Solutions for increasing the pace of innovation, data lifecycle management, incorporating
+new technology into care delivery, and improving security and compliance.
+
+4. Education: Solutions to help facilitate teaching, learning, student engagement and better learning
+outcomes as well as modernized enterprise wide IT operations.
+
+Deliverables
+
+1. Submit the source code, along with verification instructions(Optional)
+
+2. A brief demo video or presentation which include a demonstration video of the bot in action, a brief explanation of what the bot does and what makes it unique, a way to access your bot for judging and testing and a link to your bot code on GitHub (this repo may be public or private - if private, access must be given in the testing instructions provided). GitHub code will be used only for bot review and testing. (Download sample ppt)
+
+Evaluation Criteria
+
+You can build any conversational, intelligent and interactive chatbots as a microservice using Amazon Lex and AWS Lambda. Your bot will be evaluated on the following parameters:
+
+• Customer Value [40%]
+The extent to which the bot provides value to your users. Does your bot help solve a problem or painpoint for your users?
+
+• Bot Quality [30%]
+Creativity and originality of the bot. Is your bot differentiated and does it solve your users' problems in a unique way?
+
+• Implementation of the Bot [30%]
+How well the bot was built and executed by the developer. Does the bot function as intended and does it recognize and respond to the most common phrases asked of it?

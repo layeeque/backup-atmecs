@@ -1,0 +1,71 @@
+https://www.googleapis.com/customsearch/v1?key=AIzaSyC1ElhTquJ6wjOXXeslVlfcLNtQFR7GBc4&cx=013351406654656600973:5fcdko_jet4&q=encodeURIComponent(q)
+
+api key= AIzaSyC1ElhTquJ6wjOXXeslVlfcLNtQFR7GBc4
+013351406654656600973:5fcdko_jet4
+
+=========================================================================================================================================================================
+api = AIzaSyDcpIw1u0qoDICOZsYMiKrxuLCHUstzIT4
+cse = 000792015022037580768:80cf2nj_1g0
+
+
+
+https://www.googleapis.com/customsearch/v1?key=AIzaSyDcpIw1u0qoDICOZsYMiKrxuLCHUstzIT4&cx=000792015022037580768:80cf2nj_1g0&q=encodeURIComponent(q)
+
+
+===============================================================================================================================================================================
+
+api= AIzaSyAbMVp_Kmi6Ixrh6RfVLAbW_mMAY0O7itQ
+
+cse= 013351406654656600973:5gj2eij-z1i
+
+https://www.googleapis.com/customsearch/v1?key=AIzaSyAbMVp_Kmi6Ixrh6RfVLAbW_mMAY0O7itQ&cx=013351406654656600973:5gj2eij-z1i&q=encodeURIComponent(q)
+
+======================================================================================================================================================================================
+
+GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAbMVp_Kmi6Ixrh6RfVLAbW_mMAY0O7itQ&cx=013351406654656600973:5gj2eij-z1i&q=lectures
+
+==============================================================================================================================================================================================
+
+GET https://www.google.com/cse?cx=013351406654656600973:5gj2eij-z1i&q=einstein&output=xml
+
+
+
+obj.displayText.items[0].snipppet
+
+=============================================================================================================================================================================================
+
+
+mystery ==  https://blog.hubspot.com/marketing/how-to-featured-snippet-box#sm.001d8xs0e101ndwdsdu2ll2ieqg9w
+
+====================================================================================================================================================================================================
+
+atmecs search
+
+key= AIzaSyCawVbY9CvWmKqhKkXfZYvoGTVqIEDfd_Y
+
+cse = 013351406654656600973:mypf_ffbup8
+
+
+https://www.googleapis.com/customsearch/v1?key=AIzaSyCawVbY9CvWmKqhKkXfZYvoGTVqIEDfd_Y&cx=013351406654656600973:mypf_ffbup8&q=lectures
+
+
+
+013351406654656600973:mypf_ffbup8
+
+==============================================================================================================================================================================================================
+
+mypbn22@gmail.com
+
+key = AIzaSyBW9EOxBT5qOjpvP7c4Lz9dq_zN67zvocA
+cse = 008329582271722688199:qezsuxo7m00
+
+===================================================================================================================================================================================================================
+
+
+key = AIzaSyA7KrUzoeYckZBtRThI4KB_obOHeAocJUw
+cse = 008329582271722688199:phx8k84jxow
+
+https://www.googleapis.com/customsearch/v1?key=AIzaSyA7KrUzoeYckZBtRThI4KB_obOHeAocJUw&cx=008329582271722688199:phx8k84jxow&q=
+
+
+

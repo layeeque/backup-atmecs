@@ -1,0 +1,81 @@
+doctype html
+head
+  style.
+    .mainCls {
+    box-shadow: 0 7px 15px rgba(0,0,0,0.1);
+    }
+    .mainDivCls {
+    margin-top: 1%;margin-left: 3%;margin-right:3%;margin-bottom: 5%
+    }
+    'p, h3, ul {
+    font-family: sans-serif
+    }
+    'a {
+    font-family: sans-serif;
+    }
+.mainDivCls
+  div
+    p
+      | Hi #{hireName},
+      br
+      br
+      |  Congratulations!! Thanks for the offer acceptance and your interest to be a part of ATMECS family. 
+      br
+      br
+      |  Please login with the below credentials to complete the Pre On-boarding formalities and submission of the documents.
+      br
+      |  URL : 
+      a(href= "http://localhost:4200/preonboard-auth/" + newHireToken)
+        b click here
+      br
+      |  Authentication Code:
+      b   #{generatedUid} 
+      br
+      br
+      b
+        | Note: 
+        i The link will be active upto 7 days only
+      br
+      br
+      b(style='text-decoration:underline') Reporting details: 
+      br
+      b Date:
+      |   #{joiningDate} 
+      br
+      b Time:
+      |   #{joiningTime} 
+      br
+      b Contact Person:
+      |  #{contactPerson} 
+      br
+      br
+      b(style='text-decoration:underline') Location:
+      br
+      | ATMECS Technologies Private Limited 
+      br
+      | 2nd Floor (Building name: Sutherland Global Services), Lanco Hills 
+      br
+      | Manikonda, Hyderabad-500089 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Landmark: Near Delhi Public School 
+      br
+      | Office: +91 40 67681208
+    section
+      h3 Documents to be carried on the date of joining:
+      ul
+        li Three recent passport size photographs
+        li Copy of all educational and other qualification certificates
+        li
+          | Copy of the relieving order from the previous employer(s)/Accepted copy of the Resignation letter.
+        li
+          | Copy of the Appointment letter and 3 month\&apos;s pay slips from previous employer(s).
+        li Copy of Form-16
+        li Relevant Experience certificates(if any).
+        li Copy of Passport copy.
+        li Copy of PAN Card.
+        li Copy of Aadhar Card
+        li Latest resume
+    p For any assistance, please write to hr.hyd@atmecs.com
+    p Wishing you a long and fulfilling career at ATMECS.
+    div
+      b Best Regards
+    div
+      b Team - Human Resource

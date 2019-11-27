@@ -1,0 +1,283 @@
+<html ng-app="dialogDemo1">
+
+<head>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script> -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" />
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic" />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-controller="AppCtrl" ng-cloak style="text-align: -webkit-center">
+
+    <!-- =============================================================== -->
+    <!-- <md-content layout="column" style="background-color:blue;height:100px"> -->
+     <md-toolbar class="md-menu-toolbar" style=" background: linear-gradient(to right, white , gray)  ;height:140px"> 
+        <div layout="row">
+            <!-- <md-toolbar-filler layout layout-align="center center">
+                <md-icon md-svg-icon="call:chat"></md-icon>
+            </md-toolbar-filler> -->
+
+            <div>
+                <div class="md-media-lg card-media" style="position:absolute;top:12px;height:66px;width:21px;left:15px"><img src="img/wynit_logo1.png" alt="image caption"></div>
+                <md-menu-bar>
+                    <md-menu>
+                        <button class="toolbarbutton" style="position:absolute;top:80px;left:0px" ng-click="$mdMenu.open()">
+                                    File
+                </button>
+                        <md-menu-content ng-mouseleave="$mdMenu.close()">
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.sampleAction('share', $event)">
+                                    Share...
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                                <md-menu>
+                                    <md-button ng-mouseenter="$mdMenu.open()">New</md-button>
+                                    <md-menu-content>
+                                        <md-menu-item>
+                                            <md-button ng-click="ctrl.sampleAction('New Document', $event)">Document</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="ctrl.sampleAction('New Spreadsheet', $event)">Spreadsheet</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="ctrl.sampleAction('New Presentation', $event)">Presentation</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="ctrl.sampleAction('New Form', $event)">Form</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="ctrl.sampleAction('New Drawing', $event)">Drawing</md-button>
+                                        </md-menu-item>
+                                    </md-menu-content>
+                                </md-menu>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.sampleAction('Open', $event)">
+                                    Open...
+                                    <span class="md-alt-text"> {{ 'M-O' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button disabled="disabled" ng-click="ctrl.sampleAction('Rename', $event)">
+                                    Rename
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.sampleAction('Print', $event)">
+                                    Print
+                                    <span class="md-alt-text">{{ 'M-P' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                    </t>
+                    </t>
+                    </t>
+                    <md-menu>
+                        <button class="toolbarbutton" style="position:absolute;top:80px;left:60px" ng-click="$mdMenu.open()">
+              Edit
+            </button>
+                        <md-menu-content ng-mouseleave="$mdMenu.close()">
+                            <md-menu-item class="md-indent">
+                                <md-icon md-svg-icon="undo"></md-icon>
+                                <md-button ng-click="ctrl.sampleAction('undo', $event)">
+                                    Undo
+                                    <span class="md-alt-text">{{ 'M-Z' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item class="md-indent">
+                                <md-icon md-svg-icon="redo"></md-icon>
+                                <md-button ng-click="ctrl.sampleAction('redo', $event)">
+                                    Redo
+                                    <span class="md-alt-text">{{ 'M-Y' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item class="md-indent">
+                                <md-icon md-svg-icon="content-cut"></md-icon>
+                                <md-button ng-click="ctrl.sampleAction('cut', $event)">
+                                    Cut
+                                    <span class="md-alt-text">{{ 'M-X' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item class="md-indent">
+                                <md-icon md-svg-icon="content-copy"></md-icon>
+                                <md-button ng-click="ctrl.sampleAction('copy', $event)">
+                                    Copy
+                                    <span class="md-alt-text">{{ 'M-C' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item class="md-indent">
+                                <md-icon md-svg-icon="content-paste"></md-icon>
+                                <md-button ng-click="ctrl.sampleAction('paste', $event)">
+                                    Paste
+                                    <span class="md-alt-text">{{ 'M-P' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item class="md-indent">
+                                <md-button ng-click="ctrl.sampleAction('Find and replace', $event)">
+                                    Find and replace...
+                                    <span class="md-alt-text">{{ 'M-S-H' | keyboardShortcut }}</span>
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                    </t>
+                    </t>
+                    </t>
+                    <md-menu>
+                        <button class="toolbarbutton" style="position:absolute;top:80px;left:110px" ng-click="$mdMenu.open()">
+                                View
+                                     </button>
+                        <md-menu-content ng-mouseleave="$mdMenu.close()">
+                            <md-menu-item type="checkbox" ng-model="ctrl.settings.printLayout">Print layout</md-menu-item>
+                            <md-menu-item class="md-indent">
+                                <md-menu>
+                                    <md-button ng-click="$mdMenu.open()">Mode</md-button>
+                                    <md-menu-content width="3">
+                                        <md-menu-item type="radio" ng-model="ctrl.settings.presentationMode" value="'presentation'">Presentation</md-menu-item>
+                                        <md-menu-item type="radio" ng-model="ctrl.settings.presentationMode" value="'edit'">Edit</md-menu-item>
+                                        <md-menu-item type="radio" ng-model="ctrl.settings.presentationMode" value="'modifiable'">Modifiable</md-menu-item>
+                                    </md-menu-content>
+                                </md-menu>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item type="checkbox" ng-model="ctrl.settings.showRuler">Show ruler</md-menu-item>
+                            <md-menu-item type="checkbox" ng-model="ctrl.settings.showEquationToolbar">Show equation toolbar</md-menu-item>
+                            <md-menu-item type="checkbox" ng-model="ctrl.settings.showSpellingSuggestions">Show spelling suggestions</md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item type="checkbox" ng-model="ctrl.settings.compactControls">Compact controls</md-menu-item>
+                            <md-menu-item type="checkbox" ng-model="ctrl.settings.fullScreen">Full screen</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-menu-bar>
+            </div>
+
+            <md-menu>
+                <md-button aria-label="Open menu with custom trigger" class="md-icon-button" style="position:absolute;right:20px;top:80px" ng-mouseenter="$mdMenu.open()">
+                    <md-icon md-svg-src="img/menu1.svg"></md-icon>
+                </md-button>
+                <md-menu-content width="4" ng-mouseleave="$mdMenu.close()">
+                    <md-menu-item ng-repeat="item in items">
+                        <md-button ng-click="options(item.option)">
+                            {{item.option}}
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+
+        </div>
+    </md-toolbar>
+
+    <!-- </md-content> -->
+    <br/><br/>
+    <h1 ng-if="optionclicked"> you have clicked {{optionclicked}}</h1>
+
+    <md-input-container style="color:blue">
+        <label>Search Here</label>
+        <input ng-model="search">
+    </md-input-container>
+
+
+
+    <div flex-xs flex-gt-xs="50" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch ng-repeat="note in notes|filter:search"
+            style="height:140px;background-color: lightgray" class="md-whiteframe-8dp">
+            <md-sidenav md-component-id="left" class="md-sidenav-left" style="position:fixed;text-align: -webkit-center;background-color:#f7f6f4"><br/><br>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media"><img src="img/avatar{{id}}.jpg" style="height:90px;width:100px" alt="image caption"></div>
+
+                </md-card-title-media>
+                <span class="md-subhead" style="position: absolute;top:160px;right:20px;color:darkblue;font-weight: bolder;font-size:20px ">{{title}}</span><br/><br>
+                <span class="md-headline" style="color:brown;position: absolute;top:234;right:30px;font-size:40px ;text-align:center ">{{course}}</span><br/><br/>
+                <span class="md-subhead" style="position: absolute;top:324;right:30px">{{lab}}</span><br/><br/>
+                <span class="md-subhead" style="position: absolute;top:364px;right:30px">{{date}}</span><br/><br/>
+               
+
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button class="md-raised md-primary" style="position:absolute;bottom:150px;right:40px;background:#218906" ng-click="showConfirm1($event)">
+                        <md-icon md-svg-src="img/correct.svg"></md-icon>
+                    </md-button>
+                    <md-button class="md-raised md-primary" style="position:absolute;bottom:150px;right:200px;background:#ce084a" ng-click="showConfirm($event)">
+                        <md-icon md-svg-src="img/cross1.svg"></md-icon>
+                    </md-button>
+                </md-card-actions>
+                <md-button class="md-raised md-primary" style="position:fixed;bottom:64px;right:114px;background:#ce084a" ng-click="tog()">
+                    Toggle
+                </md-button>
+            </md-sidenav>
+
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-subhead" style="position: relative;top:-15px;color:darkblue;font-weight: bolder">{{note.title}}</span>
+                    <span class="md-headline" style="position: relative;top:-20px;color:brown;">{{note.course}}</span>
+                    <span class="md-subhead" style="position: relative;top:-33px">{{note.lab}}</span>
+                    <span class="md-subhead" style="position: relative;top:-48px">{{note.date}}</span>
+
+                </md-card-title-text>
+
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-fab md-mini" style="position:relative;bottom:40px;right:20px" ng-click="openLeftMenu(note.title,note.course,note.lab,note.date,note.id)">
+                    <md-icon md-svg-src="img/pencil.svg"></md-icon>
+                </md-button>
+
+            </md-card-actions>
+
+        </md-card>
+
+        <div class="lock-size" layout="row" layout-align="center center" style="position:fixed;top:450px;right:12px;">
+            <md-fab-speed-dial md-open="isClose" md-direction="{{selectedDirection}}" ng-class="selectedMode">
+                <md-fab-trigger>
+                    <md-button aria-label="menu" class="md-fab md-warn" style="background-color: rgb(255,64,129);">
+                        <md-icon md-svg-src="img/menu.svg"></md-icon>
+                    </md-button>
+                </md-fab-trigger>
+
+                <md-fab-actions>
+                    <md-button aria-label="Twitter" class="md-fab md-raised md-mini" href="https://www.facebook.com" target="_blank">
+                        <md-icon md-svg-src="img/facebook.svg" aria-label="facebbok" style="position: relative;top: 8px"></md-icon>
+                    </md-button>
+                    <md-button aria-label="Facebook" class="md-fab md-raised md-mini" href="https://www.twitter.com" target="_blank">
+                        <md-icon md-svg-src="img/twitter.svg" aria-label="twitter" style="position: relative;top: 8px"></md-icon>
+                    </md-button>
+                    <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini" href="https://www.whatsapp.com" target="_blank">
+                        <md-icon md-svg-src="img/whatsapp.svg" aria-label="whatsapp" style="position: relative;top: 8px"></md-icon>
+                    </md-button>
+                    <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini" href="https://www.youtube.com" target="_blank">
+                        <md-icon md-svg-src="img/youtube.svg" aria-label="youtube" style="position: relative;top: 8px"></md-icon>
+                    </md-button>
+                </md-fab-actions>
+            </md-fab-speed-dial>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <!-- <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+       -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

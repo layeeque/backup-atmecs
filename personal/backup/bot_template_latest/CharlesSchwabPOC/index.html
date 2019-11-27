@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atmecs Technologies</title>
+    <script>
+        var flag = true;
+        function fun() {
+
+            if (flag == true) {
+                console.log("In true block")
+                document.getElementById("container").style.display = "block";
+                document.getElementById("data").style.opacity=0.3;
+                
+
+                flag = false
+            }
+            else {
+                console.log("In false block")
+                document.getElementById("container").style.display = "none";
+                flag = true;
+                document.getElementById("data").style.opacity=1;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div style="color:brown;background-color:gainsboro;text-align: center;padding: 2%"><span>POC for Charles Schwab</span></div>
+   <div>
+        <div style="position:absolute;top:20%;text-align: center;height: 2%;width: 50%;"><img style="width: inherit"src="./cropped-logo2.png"></div>
+
+
+   
+        <iframe  style="position:absolute;bottom:5%;right:2%;"width="50%" min-height="400"  src="https://console.dialogflow.com/api-client/demo/embedded/34043e53-854a-4d93-b937-303f21e4d639">
+        </iframe>
+   </div>
+    
+    <!-- <button onclick="fun()" style="position :fixed; bottom:30px;right:40px"> click me</button> -->
+
+</body>
+
+</html>

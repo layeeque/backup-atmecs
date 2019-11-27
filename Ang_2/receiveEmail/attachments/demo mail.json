@@ -1,0 +1,12 @@
+{
+    "body": "hi\nplease look at the mail\\\nregards,\nrehman\n",
+    "subject": "demo mail",
+    "sender": [
+        {
+            "address": "layeequerehman@gmail.com",
+            "name": "layeeque rehman"
+        }
+    ],
+    "date": "2018-10-09T07:31:50.000Z",
+    "message id ": "CAONm8=VaHAH2FqVAamVeoiCTGa5bOq=JOZ3s6Lx8NWLYrsP5WA@mail.gmail.com"
+}

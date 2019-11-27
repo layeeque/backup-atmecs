@@ -1,0 +1,38 @@
+{
+"ticker":"$input.params('ticker')",
+"body" : $input.json('$') 
+}
+
+
+
+
+business_profile
+
+var gquery ='{ allIssuers( filter: { ticker: "' + ticker + '" } ) { results { displayName displayTicker tearsheet { content { subSections(keys: [\"profile\"]) { key title body } } } } }}'
+
+
+csview
+
+ var gquery ='{ allIssuers( filter: { ticker: "' + ticker + '" } ) { results { displayName displayTicker latestRec { weighting publishDate changedDate } } }}'
+
+event_risk
+
+ var gquery ='{ allIssuers( filter: { ticker: "' + ticker + '" } ) { results { displayName displayTicker tearsheet { content { subSections(keys: [\"eventrisk\"]) { key title body } } } } }}'
+   
+
+ticker
+
+      var gquery ='{ allIssuers(sort: displayName, take: 3) { results { displayName displayTicker } }}'
+
+
+issuer
+
+ var gquery = '{ allIssuers( precacheTearsheets: true sort: displayName take: 3 ) { results { displayName displayTicker latestRec { changedDate comment publishDate weighting } tearsheet { content { subSections(keys: [\"eventrisk\", \"profile\"]) { key title body } } } } }}'
+
+  
+
+
+issuer-ticker
+
+ var gquery ='{ allIssuers( filter: { ticker: "' + ticker + '" } ) { results { displayName displayTicker latestRec { weighting publishDate changedDate } tearsheet { content { subSections(keys: [\"eventrisk\", \"profile\"]) { key title body } } } } }}'
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+    <style>
+            root .swc .skypeBrandMessage {
+          font-size: 10px;
+          margin: 0px 0px 4px 10px;
+          color: #777;
+          display:none !important;
+      }
+          </style>
+    <script>
+        var flag = true;
+    $('.skypeBrandMessage:contains("Powered by Skype")').remove()
+
+    // if($('.contact-name:contains("Powered by Skype")'))
+    // {
+    //     console.log("data find @@@@@@@@@@@@@@@"+JSON.stringify($('.contact-name:contains("Powered by Skype")')))
+    // }else{
+    //     console.log("nottttttttttttttt findddddddddddddd")
+    // }
+    var brandMessage = "Atmecs Technologies"
+        function fun() {
+
+            if (flag == true) {
+                console.log("In true block")
+                document.getElementById("container").style.display = "block";
+                document.getElementById("data").style.opacity=0.3;
+                
+
+                flag = false
+            }
+            else {
+                console.log("In false block")
+                document.getElementById("container").style.display = "none";
+                flag = true;
+                document.getElementById("data").style.opacity=1;
+            }
+        }
+
+    </script>
+   
+</head>
+
+<body>
+
+ <div id="data">
+        <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+ </div>
+    <div id="container" style="display:none;position :fixed; bottom:50px;right:60px">
+        <!-- <iframe width="350" height="430" src="http://00dd6211.ngrok.io"> -->
+            <!-- <iframe width="350" height="430" src="https://lex-web-ui-codebuilddeploy-1i2jncmnt-webappbucket-1wio4ue9iun32.s3.amazonaws.com/index.html"> -->
+        <!-- </iframe> -->
+    </div>
+    <div class="skype-button bubble"  data-bot-id="b501c2ac-03c8-4105-8b7e-49915f34b311"></div>
+    <!-- <button onclick="fun()" style="position :fixed; bottom:30px;right:40px"> click me</button> -->
+   
+</body>
+
+</html>

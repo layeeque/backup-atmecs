@@ -1,0 +1,23 @@
+microsoft app id == 16abba85-3dfc-4d96-981a-da556e43a026
+
+password == nfRBWDewsaVUs2CJoAtRqDC
+
+======================================================================
+
+cognitive services keys
+
+
+Computer Vision API
+
+Distill actionable information from images
+
+5,000 transactions, 20 per minute.
+This API key is currently active
+
+30 days remaining
+
+Endpoint: https://westcentralus.api.cognitive.microsoft.com/vision/v1.0
+
+Key 1: 9d5fc10c679847638f7262e0063b377b
+
+Key 2: 2a6badc0391348398c86f0fb0929e0ed

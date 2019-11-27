@@ -1,0 +1,21 @@
+reportasked patient
+reportasked report
+reportasked get me patient report
+doctor my name is {docname}
+doctor I am {docname}
+doctor {docname}
+address india
+greeting hi
+greeting hey
+greeting hello
+OTPverification otp is {xyz}
+OTPverification my otp is {xyz}
+OTPverification otp sent is {xyz}
+OTPverification otp {xyz}
+patientVerify patient id is {pid}
+patientVerify patient {pid}
+patientVerify patient with id {pid}
+patientReportVerify report {reportid}
+patientReportVerify report with id {reportid}
+patientReportVerify get me report number {reportid}
+doctorChoiceEntry {doctorchoiceent}

@@ -1,0 +1,58 @@
+h4{
+    /* color: red; */
+    background-color: none;
+}
+.md-raised {
+    /* color:green; */
+     background-color: none;
+}
+
+.flex-gt-xs-50, .layout-row>.flex-gt-xs-50 {
+ max-height: none;
+ min-height: 100px;
+}
+
+.md-fab 
+{
+    bottom:15px;
+}
+  md-menu-content {
+  overflow-y: hidden;
+  min-height: 400px;
+}
+
+md-sidenav, 
+md-sidenav.md-locked-open, 
+md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 40% !important;
+    width: 100% !important;
+    max-width: 40% !important;
+} 
+  md-backdrop.md-opaque.md-default-theme, md-backdrop.md-opaque {
+    background:none; 
+}
+  body.md-default-theme, body, html.md-default-theme, html{
+     background:none; 
+  }
+/* ==================== */
+
+.dialogdemoBasicUsage #popupContainer {
+  position: relative; }
+
+.dialogdemoBasicUsage .footer {
+  width: 100%;
+  text-align: center;
+  margin-left: 20px; }
+
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+  font-size: 0.8em;
+  margin-top: 50px; }
+
+.dialogdemoBasicUsage button {
+  width: 200px; }
+
+.dialogdemoBasicUsage div#status {
+  color: #c60008; }
+
+.dialogdemoBasicUsage .dialog-demo-prerendered md-checkbox {
+  margin-bottom: 0; }

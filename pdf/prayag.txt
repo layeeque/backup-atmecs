@@ -1,0 +1,27 @@
+(badrinath) alaknanda+ dauliganga= alaknanda {vishnuprayag}
+ alaknanda + nandakini = alaknanda {nandprayag}
+ alaknanda + pindar = alaknanda {karnaprayag}
+ alaknanda + (kedarnath) mandakini =alaknanda {rudraprayag}
+alaknanda+ (gangotri) bhagirathi = ganga {devprayag}
+
+kasara ghat/thalghat = mumbai + nashik
+borghat = mumbai + pune
+chandanpuri ghat = pune + nashik
+divaghat= pune + baramati
+khambatki ghat = pune + satara
+kumboli ghat = chiplun + karad
+amboli ghat = sawantwadi + belagvi
+phonda ghat = Kolhapur + panaji
+amba ghat = kolhapur + Ratnagari  
+
+
+base year:
+
+WPI : 2011-2012
+GDP, IIP, CPI : 2017/2018
+
+( Badrinath ) Alaknanda + Dauliganga = Alaknanda {Vishnuprayag}
+Alaknanda + Nandakini = Alaknanda {Nandaprayag}
+Alaknanda + Pindar = Alaknanda {Karnaprayag}
+( Kedarnath ) Mandakini + Alaknanda = Alaknanda {Rudraprayag}
+( Gangotri ) Bhagirathi + Alaknanda = Alaknanda  {Devprayag }

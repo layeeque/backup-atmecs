@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+    <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+    
+    <script src="angular.js"></script>
+</head>
+
+<body ng-app="calculatorApp">
+    <h1>calculator app</h1>
+    <div ng-controller="CalculatorCtrl as ctrl">
+        <input type="text" ng-model="ctrl.input1"></input>
+        <!-- <span ng-bind="selectedOperator"></span> -->
+        {{ctrl.selectedOperator}}
+        <input type="text" ng-model="ctrl.input2"></input>
+        <button ng-click="ctrl.resultcompute()">=</button>
+        <span>{{ctrl.result}}</span>
+        <p>
+            choose operators
+            <button ng-click="ctrl.BottonClicked('+')">+</button>
+            <button ng-click="ctrl.BottonClicked('-')">-</button>
+            <button ng-click="ctrl.BottonClicked('*')">*</button>
+            <button ng-click="ctrl.BottonClicked('/')">/</button>
+        </p>
+    </div>
+    <div ng-controller="Moredirective as ctrl">
+        <input type="checkbox" ng-model="ctrl.checked"></input>
+        <p ng-show="ctrl.checked">some contents are to shown </p>
+        <div ng-repeat="i in ctrl.myList">{{$index+1}}{{$odd}}{{i.name}}{{i.age}}
+            <hr>
+        </div>
+    </div>
+    <div ng-controller="Tagsdemoctrl as ctrl">
+        <tags-input ng-model="ctrl.tags"></tags-input>
+    </div>
+</body>
+
+</html>

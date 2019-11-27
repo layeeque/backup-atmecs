@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        function fun() {
+            $("#success").css('display', 'block');
+            $("#form").css('display', 'none');
+
+        }
+    </script>
+    <style>
+        #success {
+            display: block;
+            background-color: green;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 16%;
+            color: floralwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="success" style="display: none">
+        <h1 id="complete">Saved Successfully</h1>
+
+    </div>
+
+    <div class="container" id="form">
+        <h2>Form</h2>
+        <div class="form-group">
+            <label for="email">First Name:</label>
+            <input type="email" class="form-control" id="fname" placeholder="Enter first Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Last Name:</label>
+            <input type="email" class="form-control" id="lname" placeholder="Enter Last Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Country:</label>
+            <input type="email" class="form-control" id="country" placeholder="Enter Country">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+        <div class="form-group">
+            Gender
+            <select name="example" id="gender">
+                <option selected="selected" value="Select">Select</option>
+                <option  value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
+
+            </select>
+
+
+        </div>
+        <div class="form-group">Marital Status
+
+            <select name="example" id="mstatus">
+                <option selected="selected" value="Select">Select</option>
+                <option  value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorce">Divorce</option>
+            </select>
+        </div>
+
+        <input type="button" class="btn btn-default" onclick="fun()" value="Submit"/>
+        </form>
+    </div>
+
+</body>
+
+</html>

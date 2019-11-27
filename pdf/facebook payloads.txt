@@ -1,0 +1,146 @@
+facebook payloads:
+
+for button:
+
+Formatted JSON Data
+{  
+   "facebook":{  
+      "attachment":{  
+         "type":"template",
+         "payload":{  
+            "template_type":"button",
+            "text":"Congratulations!!!",
+            "buttons":[  
+               {  
+                  "type":"postback",
+                  "title":"Start the Process",
+                  "payload":"Start the Process"
+               },
+               {  
+                  "type":"postback",
+                  "title":"end the Process",
+                  "payload":"Start the Process"
+               }
+            ]
+         }
+      }
+   }
+}
+
+
+---------------------------------------------------------------------
+
+for receipts
+
+{  
+   "facebook":{  
+      "attachment":{  
+         "type":"template",
+         "payload":{  
+            "template_type":"receipt",
+            "recipient_name":"Stephane Crozatier",
+            "order_number":"12345678902",
+            "currency":"USD",
+            "payment_method":"Visa 2345",
+            "order_url":"http://petersapparel.parseapp.com/order?order_id=123456",
+            "timestamp":"1428444852",
+            "address":{  
+               "street_1":"1 Hacker Way",
+               "street_2":"",
+               "city":"Menlo Park",
+               "postal_code":"94025",
+               "state":"CA",
+               "country":"US"
+            },
+            "summary":{  
+               "subtotal":75.00,
+               "shipping_cost":4.95,
+               "total_tax":6.19,
+               "total_cost":56.14
+            },
+            "adjustments":[  
+               {  
+                  "name":"New Customer Discount",
+                  "amount":20
+               },
+               {  
+                  "name":"$10 Off Coupon",
+                  "amount":10
+               }
+            ],
+            "elements":[  
+               {  
+                  "title":"Classic White T-Shirt",
+                  "subtitle":"100% Soft and Luxurious Cotton",
+                  "quantity":2,
+                  "price":50,
+                  "currency":"USD",
+                  "image_url":"http://petersapparel.parseapp.com/img/whiteshirt.png"
+               },
+               {  
+                  "title":"Classic Gray T-Shirt",
+                  "subtitle":"100% Soft and Luxurious Cotton",
+                  "quantity":1,
+                  "price":25,
+                  "currency":"USD",
+                  "image_url":"http://petersapparel.parseapp.com/img/grayshirt.png"
+               }
+            ]
+         }
+      }
+   }
+}
+
+
+----------------------------------------------------------------------------------------------
+
+share button:
+
+{  
+   "facebook":{  
+      "attachment":{  
+         "type":"template",
+         "payload":{  
+            "template_type":"generic",
+            "elements":[  
+               {  
+                  "title":"Breaking News: Record Thunderstorms",
+                  "subtitle":"The local area is due for record thunderstorms over the weekend.",
+                  "image_url":"https://thechangreport.com/img/lightning.png",
+                  "buttons":[  
+                     {  
+                        "type":"element_share",
+                        "share_contents":{  
+                           "attachment":{  
+                              "type":"template",
+                              "payload":{  
+                                 "template_type":"generic",
+                                 "elements":[  
+                                    {  
+                                       "title":"I took the hat quiz",
+                                       "subtitle":"My result: Fez",
+                                       "image_url":"https://bot.peters-hats.com/img/hats/fez.jpg",
+                                       "default_action":{  
+                                          "type":"web_url",
+                                          "url":"http://m.me/petershats?ref=invited_by_24601"
+                                       },
+                                       "buttons":[  
+                                          {  
+                                             "type":"web_url",
+                                             "url":"http://m.me/petershats?ref=invited_by_24601",
+                                             "title":"Take Quiz"
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         }
+      }
+   }
+}

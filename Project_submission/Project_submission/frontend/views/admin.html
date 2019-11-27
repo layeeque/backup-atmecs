@@ -1,0 +1,53 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="font-size: 30px;font-weight: bold;color:grey" href="#">Blockchain Todo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#!login">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#!test">Test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Abort</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#!gets">Get the Status</a>
+          </li>
+
+          
+        <li class="nav-item">
+            <a class="nav-link" href="#!updts">Update the Status</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!submission">Submission</a>
+          </li>
+  
+  
+      </ul>
+  
+    </div>
+  </nav>
+<h3 style="padding-top:1%;color:grey;text-align: center">Welcome to Admin Console</h3>
+
+
+<div ng-repeat="a in apply" style="padding:auto">
+   <div class="card" style="width:60%">
+      <div>Name : {{a.Name}}</div>
+    <div>Address : {{a.Address}}</div>
+    <div>Task-Id : {{a.Taskid}}</div>
+    <div>Status : {{a.status}}</div><br>
+    <div style="margin:auto"><button ng-click="confirm(a,'confirm')" class="Rbutton"><span class="save">Confirm the task</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button ng-click="confirm(a,'reject')" class="Rbutton"><span class="save">Reject the task</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button ng-click="AddBLC(a)" class="Rbutton" ng-disabled="a.BLadd=='yes'"><span class="save">Add into Blockchain</span></button></div>&nbsp;&nbsp;
+   </div>
+</div>

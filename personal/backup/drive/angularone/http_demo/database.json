@@ -1,0 +1,27 @@
+{
+    "records":[
+        {
+            "name":"faiz",
+            "age":"23"
+            ,"fav_color":"orange"
+        },
+        {
+            "name":"salim",
+            "age":"21"
+            ,"fav_color":"red"
+        },{
+            "name":"ali",
+            "age":"18"
+            ,"fav_color":"purple"
+        },{
+            "name":"rizwan",
+            "age":"5"
+            ,"fav_color":"orange"
+        },
+        {
+            "name":"annonymous",
+            "age":"???"
+            ,"fav_color":"black"
+        }
+    ]
+}

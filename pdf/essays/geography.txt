@@ -1,0 +1,3 @@
+contour lines - Immaginary line joining places of same height
+Isobaths lines - Immaginary line joining places of same depth
+Isohyets lines - Immaginary line joining places of same rainfall

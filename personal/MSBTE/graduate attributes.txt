@@ -1,0 +1,30 @@
+Periodic verfication for government stores
+
+Class A - above 5 lakh
+Class B - 1- lakh
+Class C - less than 1 lakh
+
+periodic verification
+Class A - once in a 3 years
+Class B & C - -once in a 5 years
+
+
+=================================
+12 Graduate attributes
+
+A.Knowledge oriented (1)
+  1- use your engineering knowledge
+B.problem solving (3)
+  2-problem analysis
+  3-design of a solution
+  4-investigation
+C.skill oriented (4)
+  5-modern tool iusage
+  6-individual teamwork
+  7-communication
+  8-project mgmt
+D.attitude oriented (4)
+  9-engineer in Society
+  10-Environment
+  11-Ethics
+  12-Life long learning
